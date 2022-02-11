@@ -10,6 +10,8 @@ Jinzhi Zhang\*, Mengqi Ji*, Guangyu Wang, Xue Zhiwei, Shengjin Wang, Lu Fang.
 
 Accepted by [TPAMI, 2021](https://ieeexplore.ieee.org/document/9555381).
 
+
+
 ## Installation
 
 In order to run the code you will need a GPU with CUDA support and Python interpreter. The code is compatible with python 3.6 and pytorch 1.5.0. Conda environment and additional dependencies including pytorch3d can be installed by running:
@@ -18,6 +20,8 @@ In order to run the code you will need a GPU with CUDA support and Python interp
 conda env create -f environment.yml
 conda activate SurRF
 ```
+
+
 
 ## Usage
 
@@ -31,7 +35,7 @@ This official implementation reproduces the optimization, view synthesis and poi
 - `graphs/render/render_base.py`: base code for rasterization and rendering, point cloud reconstruction scripts are also included.
 - `graphs/models/network.py`: neural network architecture.
 
-#### Data
+### Data
 
 We optimize and evaluate SurRF on publicly available MVS datasets, including [DTU MVS dataset](http://roboimagedata.compute.dtu.dk/?page_id=36) and [Tanks and Temples dataset](https://www.tanksandtemples.org/).
 
@@ -41,7 +45,7 @@ This implementation uses DTU scan9 as an example. To run the code, the dataset a
 
 When using other datasets, the images, camera poses and input point cloud should be organized in the similar way as the provided DTU scan9 example.
 
-#### Optimizing Surface Radiance Field
+### Optimizing Surface Radiance Field
 
 To optimize the Surface Radiance Field, 
 
@@ -56,9 +60,9 @@ cd agents/
 python base.py
 ```
 
-#### Point Cloud Reconstruction
+### Point Cloud Reconstruction
 
-To reconstruct point cloud based on the optimized SurRF, 
+To reconstruct point cloud, 
 
 - specify `mode` in `root_params()` of `config/parameter.py` as `'reconstruct'`,
 - specify `load_checkpoint_dir` in `root_params()` of `config/parameter.py` as the training checkpoint directory,
@@ -70,9 +74,9 @@ cd agents/
 python base.py
 ```
 
-#### Novel View Synthesis
+### Novel View Synthesis
 
-To interpolate novel views based on the optimized SurRF, 
+To interpolate novel views, 
 
 - specify the `mode` in `root_params()` of `config/parameter.py` as `'reconstruct'`.
 - specify the `load_checkpoint_dir` in `root_params()` of `config/parameter.py` as the training checkpoint directory.
@@ -83,6 +87,8 @@ To interpolate novel views based on the optimized SurRF,
 cd agents/
 python base.py
 ```
+
+
 
 ## Citation
 
