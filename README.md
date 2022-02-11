@@ -1,6 +1,6 @@
 # SurRF: Unsupervised Multi-view Stereopsis by Learning Surface Radiance Field[[Paper]](https://ieeexplore.ieee.org/document/9555381)[[Demo]()]
 
-<img src="https://github.com/GuangyuWang99/SurRF/raw/main/media/method_1.png" alt="method" style="zoom:10%;" /><img align='right' src="https://github.com/GuangyuWang99/SurRF/raw/main/media/pipeline.png" alt="pipeline" style="zoom:5%;" />
+<img src="https://github.com/GuangyuWang99/SurRF/raw/main/media/method_1.png" width="200" height="180" alt="method"/><img align='right' src="https://github.com/GuangyuWang99/SurRF/raw/main/media/pipeline.png" width="400" height="180" alt="pipeline"/>
 
 The official implementation for the paper:
 
